@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Lighthouse Island Bistro</title>
+<meta charset="utf-8">
+<style>
+
+body { 
+    font-family: Verdana, Arial, sans-serif;
+    background-color: #00005D;
+}
+
+/* Associate elements with grid areas */
+header { grid-area: header; }
+nav    { grid-area: nav; }
+main   { grid-area: main; }
+aside  { grid-area: aside; }
+footer { grid-area: footer; }
+
+/* GRID CONTAINER */
+#wrapper { 
+    background-color: #b3c7e6; 
+    color: #000066;
+    width: 80%;
+    margin: auto;
+    min-width: 850px;
+
+    display: grid;
+    grid-template-columns: 150px 1fr 30%;
+    grid-template-rows: 100px auto 50px;
+
+    grid-template-areas:
+        "header header header"
+        "nav    main   aside"
+        "nav    footer footer";
+}
+
+/* Header */
+header {
+    grid-area: header;
+
+    background-image: url(header.jpg);
+    background-repeat: no-repeat;
+    background-color: #869dc7;
+    color: #00005D;
+
+    display: flex;
+    justify-content: center;   /* horizontal center */
+    align-items: center;       /* vertical center */
+}
+
+
+/* Navigation */
+nav {
+    background-color: #b3c7e6;
+    padding: 10px;
+    font-weight: bold;
+}
+
+/* Main Content */
+main {
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+/* Aside */
+aside {
+    background-color: #eaeaea;
+    padding: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #869dc7;
+    text-align: center;
+    padding: 10px;
+    font-size: 70%;
+}
+
+/* Headings */
+h2 { 
+    color: #869dc7; 
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation Links */
+nav a { 
+    text-decoration: none; 
+    display: block;
+    padding: 10px;
+    color: #000066;
+}
+
+nav a:hover { 
+    background-color: #eaeaea;
+}
+
+</style>
+</head>
+
+<body>
+<div id="wrapper">
+
+<header>
+<h1>Lighthouse Island Bistro</h1>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Menu</a>
+    <a href="#">Map</a>
+    <a href="#">Contact</a>
+</nav>
+
+<main>
+    <h2>Locally Roasted Free-Trade Coffee</h2>
+    <p>Indulge in the aroma of freshly ground roast coffee. Specialty drinks are available hot or cold.</p>
+
+    <h2>Specialty Pastries</h2>
+    <p>Enjoy a selection of our fresh-baked, organic pastries, including fresh-fruit muffins, scones, croissants, and cinnamon rolls.</p>
+
+    <h2>Lunchtime is Anytime</h2>
+    <p>Savor delicious wraps and sandwiches on hearty, whole-grain breads with locally-grown salad, fruit, and vegetables.</p>
+
+    <h2>Panoramic View</h2>
+    <p>Take in some scenery!</p>
+</main>
+
+<aside> 
+    <img src="lighthouseisland.jpg" alt="Scenery" width="100%">
+</aside>
+
+<footer>
+    Copyright &copy; 2026
+</footer>
+
+</div>
+</body>
+</html>
