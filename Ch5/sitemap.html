@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Site Map</title>
+
+    <style>
+        body {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, serif;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            font-size: 40px;
+            margin-top: 30px;
+        }
+
+        .tree {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .node {
+            padding: 12px 25px;
+            border: 3px solid #4CAF50;
+            border-radius: 15px;
+            background-color: #e6e6e6;
+            font-size: 20px;
+            margin: 10px;
+        }
+
+        a {
+            text-decoration: underline;
+            color: purple;
+            font-weight: bold;
+        }
+
+        /* vertical line from Home */
+        .vertical-line {
+            width: 3px;
+            height: 30px;
+            background: black;
+        }
+
+        .children {
+            display: flex;
+            justify-content: center;
+            gap: 80px;
+            position: relative;
+            margin-top: 10px;
+        }
+
+        /* horizontal line */
+        .children::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 4%;
+            width: 89%;
+            height: 3px;
+            background: black;
+        }
+
+        .child {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* vertical connector for EACH child */
+        .child-line {
+            width: 3px;
+            height: 20px;
+            background: black;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>My Website Sitemap</h1>
+
+    <div class="tree">
+
+        <!-- Home -->
+        <div class="node">
+            <a href="sitemap.html">Home</a>
+        </div>
+
+        <div class="vertical-line"></div>
+
+        <!-- Children -->
+        <div class="children">
+
+            <div class="child">
+                <div class="child-line"></div>
+                <div class="node">
+                    <a href="pradhan.html">About Me</a>
+                </div>
+            </div>
+
+            <div class="child">
+                <div class="child-line"></div>
+                <div class="node">
+                    <a href="mylinks.html">My Links</a>
+                </div>
+            </div>
+
+            <div class="child">
+                <div class="child-line"></div>
+                <div class="node">
+                    <a href="myhobby.html">My Hobby</a>
+                </div>
+            </div>
+
+            <div class="child">
+                <div class="child-line"></div>
+                <div class="node">
+                    <a href="mymobilelinks.html">My Mobile Links</a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
