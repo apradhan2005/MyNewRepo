@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Music Survey</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5dc;
+        }
+        .container {
+            width: 500px;
+            margin: auto;
+            background-color: #fff8dc;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+        fieldset {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Music Survey Form</h2>
+
+    <form action="#" method="post">
+
+        <!-- Name -->
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <!-- Email -->
+        <label for="email">E-mail:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <!-- Date Control -->
+        <label for="date">Date you listen to music:</label><br>
+        <input type="date" id="date" name="date"><br><br>
+
+        <!-- Radio Buttons -->
+        <fieldset>
+            <legend>Favorite Music Genre</legend>
+
+            <input type="radio" id="pop" name="genre" value="pop">
+            <label for="pop">Pop</label><br>
+
+            <input type="radio" id="rock" name="genre" value="rock">
+            <label for="rock">Rock</label><br>
+
+            <input type="radio" id="jazz" name="genre" value="jazz">
+            <label for="jazz">Jazz</label><br>
+        </fieldset>
+
+        <!-- Select Box -->
+        <label for="artists">Favorite Artist:</label><br>
+        <select id="artists" name="artists" size="3">
+            <option>Taylor Swift</option>
+            <option>Drake</option>
+            <option>The Weeknd</option>
+            <option>Ariana Grande</option>
+        </select><br><br>
+
+        <!-- Scrolling Text Box -->
+        <label for="comments">Tell us about your music taste:</label><br>
+        <textarea id="comments" name="comments" cols="60" rows="3"></textarea><br><br>
+
+        <!-- Buttons -->
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+    </form>
+</div>
+
+</body>
+</html>
